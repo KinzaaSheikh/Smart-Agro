@@ -3,18 +3,21 @@
     padding: auto;
     margin: 0;
     box-sizing: border-box;
+    font-weight: 200;
 }
 
 body, html {
     height: 100%;
     background-color: #334B35;
+    color: #FFFFFF;
+    text-shadow: #1A1A1A;
 }
 
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;
+    padding: 1.25rem;
 }
 
 .nav-links ul {
@@ -73,10 +76,129 @@ body, html {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    
 }
 
 .hero-content {
     position: absolute;
-    color: white;
+}
+
+.hero .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    max-width: 50%;
+    line-height: 140%;
+}
+
+.hero .hero-content h1 span {
+    color: #F7C35F;
+}
+
+.hero .hero-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.hero .hero-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: -.25em; 
+    right: 0.5rem;
+    height: 1rem;
+    width: 100%;
+    background-image: url('Underline_01.svg');
+    background-repeat: no-repeat;
+    
+}
+
+.hero .hero-content p {
+    max-width: 60%;
+    -webkit-text-stroke: 1px gray;
+    line-height: 120%;
+}
+
+.hero .hero-content a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #F7C35F;
+    color: #1A1A1A;
+    font-size: .75rem;
+    border-radius: 12px;
+    padding: 1.5em 3em;
+    margin-top: 2rem;
+}
+
+.image img {
+    margin: 24px;
+    border-radius: 12px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    z-index: 1;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    color: #FFFFFF;
+    width: 80%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.details {
+    background-color: #6D8C54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24rem;
+    border-radius: 18px;
+    position: relative;
+    top: -4rem;
+    left: 8rem;
+    z-index: 2;
+}
+
+.details h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.content h3 {
+    color: #F7C35F;
+    margin-bottom: 1.75rem;
+}
+
+.content h4 {
+    margin-bottom: 2rem;
+}
+
+.content p {
+    margin-bottom: 2rem;
+}
+
+.content ul li {
+    padding: .5rem;
+}
+
+.categories .heading {
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    text-align: center;
+}
+
+.categories .heading h4 {
+    margin-bottom: 2rem;
 }
