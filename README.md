@@ -1,1 +1,1 @@
-# This is my attempt to implement the figma design into fully responsive code in plain HTML & CSS
+This is my attempt to implement the figma design into fully responsive code in plain HTML & CSS
