@@ -19,6 +19,13 @@ h2 {
     line-height: 150%;
 }
 
+h4 {
+    margin-bottom: 2rem;
+    text-shadow: #1A1A1A;
+    line-height: 1rem;
+    font-size: 1.25rem;
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -251,7 +258,7 @@ h2 {
 
 .video {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 24rem 120px;
     gap: 2rem;
     width: 80%;
     height: 100%;
@@ -265,7 +272,7 @@ h2 {
     justify-content: center;
 }
 
-#projects {
+#comp-projects {
     width: 100%;
     height: 40vh;
     background-image: url('style.jpg');
@@ -275,19 +282,17 @@ h2 {
     position: relative;
 }
 
-.projects {
-   
+.comp-projects {
+    width: 90%;
     height: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    align-items: center;
-    justify-content: center;
+    padding: 4rem 0;
 }
 
 .projects-heading {
-    align-items: center;
-    justify-content: center;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .cards {
@@ -296,3 +301,211 @@ h2 {
     gap: 2rem;
 }
 
+.card img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: .3rem;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    cursor: pointer;
+    border: 1px solid #F7C35F;
+    transform: translateY(-1.5rem);
+}
+
+
+#testimonials {
+    position: relative;
+}
+
+.test-heading {
+    margin: 0 auto;
+    padding: 4rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.test {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.test p {
+    font-weight: .5rem;
+    text-shadow: #1A1A1A;
+    -webkit-text-stroke: 1px gray;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.facecard img {
+    border-radius: 12rem;
+}
+
+.agriculture {
+    position: relative;
+    display: flex;
+    background-color: #6D8C54; 
+    align-items: stretch;
+}
+
+.img-agri {
+    position: relative;
+}
+
+.img-agri .bg-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img-agri .trademark {
+    position: absolute;
+    z-index: 2;
+    top: 3rem;
+    right: -3rem;
+}
+
+.content-agri {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.agri-details {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    margin: 3rem;
+}
+
+.agri-details .agriContent {
+    flex: 1;
+}
+
+.growth {
+    border-bottom: 1px dashed #FFFFFF; 
+    padding-bottom: 3rem; 
+    margin-bottom: 3rem; 
+}
+
+.top-right-svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bottom-right-svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#news {
+    width: 100%;
+    height: 40vh;
+    background-image: url('news_bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.news {
+    width: 90%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.news-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
+/* 
+.card {
+  background: #fff;
+  border-radius: 8px;
+  @include box-shadow;
+  transition: all 300ms ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+  
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px 32px;
+  }
+  
+  &__cover {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+  }
+  
+  &__tag {
+    background: $red;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff
+  }
+  
+  &__body {
+    padding: 20px;
+  }
+  
+  &__title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  &__desc {
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: $text-light;
+    line-height: 1.6;
+  }
+}
+
+.card__cover {
+  &--one {
+        background-image: url(https://cdn.dribbble.com/users/250235/screenshots/7885863/media/b2a6d5fb3c27de51d1c0c424296460ba.png);
+  }
+  
+  &--two {
+    background-image: url(https://cdn.dribbble.com/users/769121/screenshots/11112077/media/1445dc22a15c2590ac332fc20abaf2df.jpg);
+  }
+  
+  &--three {
+    background-image: url(https://cdn.dribbble.com/users/772985/screenshots/6034403/link_4x.png?compress=1&resize=1200x900);
+  }
+}
+
+#huck {
+  max-width: 80px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+} */
