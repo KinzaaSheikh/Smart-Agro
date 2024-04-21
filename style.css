@@ -263,8 +263,7 @@ ul li {
 }
 
 .video {
-    display: grid;
-    grid-template-columns: 24rem 120px;
+    display: flex;
     gap: 2rem;
     width: 80%;
     height: 100%;
@@ -274,6 +273,8 @@ ul li {
 }
 
 .play {
+    display: flex;
+    width: 60%;
     align-items: center;
     justify-content: center;
 }
@@ -320,11 +321,6 @@ ul li {
     transform: translateY(-1.5rem);
 }
 
-
-#testimonials {
-    position: relative;
-}
-
 .test-heading {
     margin: 0 auto;
     padding: 4rem 0;
@@ -334,13 +330,16 @@ ul li {
 
 .test {
     display: flex;
+    width: 100%;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
     margin: 2rem;
 }
 
 .test p {
     font-weight: .5rem;
+    width: 50%;
     text-shadow: #1A1A1A;
     -webkit-text-stroke: 1px gray;
     margin-bottom: 1rem;
@@ -596,11 +595,14 @@ input {
     display: flex;
     align-items: center;
     font-family: CustomFont;
+    width: 60%;
+    justify-content: space-around;
 }
 
-.discover a {
-
-    justify-content: flex-end;
+.discover-button {
+    width: 40%;
+    display: flex;
+    justify-content: end;
 }
 
 footer {
