@@ -6,6 +6,11 @@
     font-weight: 200;
 }
 
+@font-face {
+    font-family: 'CustomFont';
+    src: url('C:\Users\kinza\Downloads\johnstown-demo\johnstown-demo.ttf');
+}
+
 body, html {
     height: 100%;
     background-color: #334B35;
@@ -33,6 +38,11 @@ h4 {
     padding: 1.25rem;
 }
 
+ul li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
 .nav-links ul {
     display: flex;
     gap: 2em;
@@ -41,22 +51,18 @@ h4 {
 }
 
 
-.nav-links a {
+.links {
     color: #FFFFFF;
     text-decoration: none;
     -webkit-text-stroke: 1px gray;
+    position: relative;
 }
 
-.nav-links a {
-    text-decoration: none;
-    position: relative; 
-}
-
-.nav-links a:hover {
+.links:hover {
     padding-bottom: 8px;
 }
 
-.nav-links a::after {
+.links::after {
     content: '';
     position: absolute;
     left: 0;
@@ -68,7 +74,7 @@ h4 {
     transition: transform 0.3s ease; 
 }
 
-.nav-links a:hover::after {
+.links:hover::after {
     transform: scaleX(1); 
 }
 
@@ -589,6 +595,7 @@ input {
 .disc-header {
     display: flex;
     align-items: center;
+    font-family: CustomFont;
 }
 
 .discover a {
@@ -596,16 +603,35 @@ input {
     justify-content: flex-end;
 }
 
-footer a {
-    text-decoration: none;
-    color: gray;
-    cursor: pointer;
+footer {
+    width: 100%;
+    bottom: 0;
+    padding: 100px 0 30px;
+
 }
 
 .row {
+    width: 85%;
+    margin: auto;
     display: flex;
-    padding: 2rem;
-    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col-text {
+    flex-basis: 40%;
+    padding: 10px;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col a {
+    display: inline-block;
+    margin-bottom: 1rem;
 }
 
 .row2 {
@@ -613,4 +639,10 @@ footer a {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
+}
+
+.email {
+    padding: 10px;
+    border-radius: 100%;
+    margin: -3rem;
 }
