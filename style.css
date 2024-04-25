@@ -3,7 +3,6 @@
     padding: auto;
     margin: 0;
     box-sizing: border-box;
-    font-weight: 200;
 }
 
 @font-face {
@@ -15,7 +14,6 @@ body, html {
     height: 100%;
     background-color: #334B35;
     color: #FFFFFF;
-    text-shadow: #1A1A1A;
 }
 
 h2 {
@@ -54,7 +52,6 @@ ul li {
 .links {
     color: #FFFFFF;
     text-decoration: none;
-    -webkit-text-stroke: 1px gray;
     position: relative;
 }
 
